@@ -7,6 +7,8 @@ This notebook contains a series of self-contained puzzles for learning about der
 
 ![](https://github.com/srush/autodiff-puzzles/raw/main/image.png)
 
+**Click here to get started:**
+
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/srush/Autodiff-Puzzles/blob/main/autodiff_puzzlers.ipynb)
 
 
