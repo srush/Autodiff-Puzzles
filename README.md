@@ -1,6 +1,14 @@
 # Autodiff Puzzles
+- by [Sasha Rush](http://rush-nlp.com) - [srush_nlp](https://twitter.com/srush_nlp)
+
 
 This notebook contains a series of self-contained puzzles for learning about derivatives in tensor libraries. It is the 3rd puzzle set in a series of puzzles about deep learning programming ([Tensor Puzzles](https://github.com/srush/Tensor-Puzzles), [GPU Puzzles](https://github.com/srush/GPU-Puzzles) ) . While related in spirit, the puzzles are all pretty seperate and can be done on their own. 
+
+
+![](https://github.com/srush/autodiff-puzzles/raw/main/image.png)
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/srush/autodiff-puzzles/blob/main/autodiff_puzzlers.ipynb)
+
 
 
 ## Introduction
@@ -989,53 +997,53 @@ in_out(fb_relu)
   <tbody>
     <tr>
       <th>0</th>
-      <td>4</td>
-      <td>4</td>
+      <td>2</td>
+      <td>2</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>5</td>
-      <td>5</td>
+      <td>3</td>
+      <td>3</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>6</td>
-      <td>6</td>
+      <td>4</td>
+      <td>4</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>8</td>
-      <td>8</td>
+      <td>6</td>
+      <td>6</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>9</td>
-      <td>9</td>
+      <td>8</td>
+      <td>8</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>10</td>
-      <td>10</td>
+      <td>9</td>
+      <td>9</td>
     </tr>
     <tr>
       <th>6</th>
-      <td>12</td>
-      <td>12</td>
+      <td>10</td>
+      <td>10</td>
     </tr>
     <tr>
       <th>7</th>
-      <td>13</td>
-      <td>13</td>
+      <td>11</td>
+      <td>11</td>
     </tr>
     <tr>
       <th>8</th>
-      <td>14</td>
-      <td>14</td>
+      <td>12</td>
+      <td>12</td>
     </tr>
     <tr>
       <th>9</th>
-      <td>16</td>
-      <td>16</td>
+      <td>13</td>
+      <td>13</td>
     </tr>
   </tbody>
 </table>
@@ -1419,17 +1427,17 @@ in_out(fb_sort, overlap=False)
   <tbody>
     <tr>
       <th>0</th>
-      <td>0</td>
+      <td>7</td>
       <td>0</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>3</td>
+      <td>0</td>
       <td>1</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>11</td>
+      <td>5</td>
       <td>2</td>
     </tr>
     <tr>
@@ -1439,32 +1447,32 @@ in_out(fb_sort, overlap=False)
     </tr>
     <tr>
       <th>4</th>
-      <td>2</td>
+      <td>48</td>
       <td>4</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>7</td>
+      <td>8</td>
       <td>5</td>
     </tr>
     <tr>
       <th>6</th>
-      <td>19</td>
+      <td>33</td>
       <td>6</td>
     </tr>
     <tr>
       <th>7</th>
-      <td>15</td>
+      <td>28</td>
       <td>7</td>
     </tr>
     <tr>
       <th>8</th>
-      <td>42</td>
+      <td>25</td>
       <td>8</td>
     </tr>
     <tr>
       <th>9</th>
-      <td>13</td>
+      <td>6</td>
       <td>9</td>
     </tr>
   </tbody>
@@ -1927,38 +1935,38 @@ zip(fb_conv, split=45, out_shape=39, pos1=[10, 20, 30], pos2=[5] if SHOW_KERNEL 
     </tr>
     <tr>
       <th>3</th>
-      <td>3</td>
+      <td>4</td>
       <td>0</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>4</td>
-      <td>0</td>
+      <td>1</td>
+      <td>1</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>1</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>6</th>
       <td>2</td>
       <td>1</td>
     </tr>
     <tr>
-      <th>7</th>
+      <th>6</th>
       <td>3</td>
       <td>1</td>
     </tr>
     <tr>
-      <th>8</th>
-      <td>4</td>
+      <th>7</th>
+      <td>5</td>
       <td>1</td>
     </tr>
     <tr>
+      <th>8</th>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
       <th>9</th>
-      <td>5</td>
-      <td>1</td>
+      <td>3</td>
+      <td>2</td>
     </tr>
   </tbody>
 </table>
