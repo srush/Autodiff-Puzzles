@@ -24,7 +24,7 @@ Your goal in these puzzles is to implement the derivatives for each function bel
 * Every answer is 1 line of 80-column code. 
 * Everything in these puzzles should be done with standard Python numbers. (No need for torch or anything else.)
 * Recall the basic multivariate calculus identities, most importantly: 
-$$ f(x_1, x_2, x_3) = x_1 + x_2 + x_3 \Rightarrow \frac{d f(x)_1}{dx_1} = 1, \frac{d f(x)_1}{dx_2} = 0  $$
+$$f(x_1, x_2, x_3) = x_1 + x_2 + x_3 \Rightarrow \frac{d f(x)_1}{dx_1} = 1, \frac{d f(x)_1}{dx_2} = 0$$
 
 * Python booleans auto-cast with python numbers. So you can use them as indicator functions, i.e. $$\mathbf{1}(3=3) \cdot (25-3)$$
 
