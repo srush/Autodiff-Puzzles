@@ -7,7 +7,7 @@ This notebook contains a series of self-contained puzzles for learning about der
 
 ![](https://github.com/srush/autodiff-puzzles/raw/main/image.png)
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/srush/autodiff-puzzles/blob/main/autodiff_puzzlers.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/srush/Autodiff-Puzzles/blob/main/autodiff_puzzlers.ipynb)
 
 
 
@@ -992,18 +992,18 @@ in_out(fb_relu)
   <tbody>
     <tr>
       <th>0</th>
-      <td>1</td>
-      <td>1</td>
+      <td>0</td>
+      <td>0</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>3</td>
-      <td>3</td>
+      <td>1</td>
+      <td>1</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>4</td>
-      <td>4</td>
+      <td>3</td>
+      <td>3</td>
     </tr>
     <tr>
       <th>3</th>
@@ -1017,28 +1017,28 @@ in_out(fb_relu)
     </tr>
     <tr>
       <th>5</th>
-      <td>8</td>
-      <td>8</td>
+      <td>7</td>
+      <td>7</td>
     </tr>
     <tr>
       <th>6</th>
-      <td>9</td>
-      <td>9</td>
+      <td>8</td>
+      <td>8</td>
     </tr>
     <tr>
       <th>7</th>
-      <td>10</td>
-      <td>10</td>
+      <td>9</td>
+      <td>9</td>
     </tr>
     <tr>
       <th>8</th>
-      <td>11</td>
-      <td>11</td>
+      <td>10</td>
+      <td>10</td>
     </tr>
     <tr>
       <th>9</th>
-      <td>12</td>
-      <td>12</td>
+      <td>11</td>
+      <td>11</td>
     </tr>
   </tbody>
 </table>
@@ -1427,47 +1427,47 @@ in_out(fb_sort, overlap=False)
     </tr>
     <tr>
       <th>1</th>
-      <td>7</td>
+      <td>15</td>
       <td>1</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>0</td>
+      <td>46</td>
       <td>2</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>14</td>
+      <td>4</td>
       <td>3</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>43</td>
+      <td>39</td>
       <td>4</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>25</td>
+      <td>3</td>
       <td>5</td>
     </tr>
     <tr>
       <th>6</th>
-      <td>5</td>
+      <td>47</td>
       <td>6</td>
     </tr>
     <tr>
       <th>7</th>
-      <td>18</td>
+      <td>10</td>
       <td>7</td>
     </tr>
     <tr>
       <th>8</th>
-      <td>49</td>
+      <td>28</td>
       <td>8</td>
     </tr>
     <tr>
       <th>9</th>
-      <td>20</td>
+      <td>35</td>
       <td>9</td>
     </tr>
   </tbody>
@@ -1719,53 +1719,53 @@ zip(fb_mul)
   <tbody>
     <tr>
       <th>0</th>
-      <td>1</td>
-      <td>1</td>
+      <td>0</td>
+      <td>0</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>2</td>
-      <td>2</td>
+      <td>1</td>
+      <td>1</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>3</td>
-      <td>3</td>
+      <td>2</td>
+      <td>2</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>4</td>
-      <td>4</td>
+      <td>3</td>
+      <td>3</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>5</td>
-      <td>5</td>
+      <td>4</td>
+      <td>4</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>6</td>
-      <td>6</td>
+      <td>5</td>
+      <td>5</td>
     </tr>
     <tr>
       <th>6</th>
-      <td>7</td>
-      <td>7</td>
+      <td>6</td>
+      <td>6</td>
     </tr>
     <tr>
       <th>7</th>
-      <td>8</td>
-      <td>8</td>
+      <td>7</td>
+      <td>7</td>
     </tr>
     <tr>
       <th>8</th>
-      <td>9</td>
-      <td>9</td>
+      <td>8</td>
+      <td>8</td>
     </tr>
     <tr>
       <th>9</th>
-      <td>10</td>
-      <td>10</td>
+      <td>9</td>
+      <td>9</td>
     </tr>
   </tbody>
 </table>
@@ -1821,33 +1821,33 @@ zip(fb_mul)
     </tr>
     <tr>
       <th>4</th>
-      <td>4</td>
-      <td>4</td>
+      <td>5</td>
+      <td>5</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>5</td>
-      <td>5</td>
+      <td>6</td>
+      <td>6</td>
     </tr>
     <tr>
       <th>6</th>
-      <td>6</td>
-      <td>6</td>
+      <td>7</td>
+      <td>7</td>
     </tr>
     <tr>
       <th>7</th>
-      <td>7</td>
-      <td>7</td>
+      <td>8</td>
+      <td>8</td>
     </tr>
     <tr>
       <th>8</th>
-      <td>8</td>
-      <td>8</td>
+      <td>9</td>
+      <td>9</td>
     </tr>
     <tr>
       <th>9</th>
-      <td>9</td>
-      <td>9</td>
+      <td>10</td>
+      <td>10</td>
     </tr>
   </tbody>
 </table>
@@ -1925,43 +1925,43 @@ zip(fb_conv, split=45, out_shape=39, pos1=[10, 20, 30], pos2=[5] if SHOW_KERNEL 
     </tr>
     <tr>
       <th>2</th>
-      <td>2</td>
+      <td>3</td>
       <td>0</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>3</td>
+      <td>4</td>
       <td>0</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>4</td>
-      <td>0</td>
+      <td>1</td>
+      <td>1</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>1</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>6</th>
       <td>2</td>
       <td>1</td>
     </tr>
     <tr>
-      <th>7</th>
-      <td>3</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>8</th>
+      <th>6</th>
       <td>4</td>
       <td>1</td>
     </tr>
     <tr>
-      <th>9</th>
+      <th>7</th>
       <td>5</td>
       <td>1</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>3</td>
+      <td>2</td>
     </tr>
   </tbody>
 </table>
@@ -2012,38 +2012,38 @@ zip(fb_conv, split=45, out_shape=39, pos1=[10, 20, 30], pos2=[5] if SHOW_KERNEL 
     </tr>
     <tr>
       <th>3</th>
-      <td>3</td>
       <td>0</td>
+      <td>1</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>4</td>
-      <td>0</td>
+      <td>1</td>
+      <td>1</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>0</td>
+      <td>4</td>
       <td>1</td>
     </tr>
     <tr>
       <th>6</th>
-      <td>1</td>
-      <td>1</td>
+      <td>0</td>
+      <td>2</td>
     </tr>
     <tr>
       <th>7</th>
+      <td>3</td>
       <td>2</td>
-      <td>1</td>
     </tr>
     <tr>
       <th>8</th>
-      <td>3</td>
-      <td>1</td>
+      <td>4</td>
+      <td>2</td>
     </tr>
     <tr>
       <th>9</th>
-      <td>0</td>
       <td>2</td>
+      <td>3</td>
     </tr>
   </tbody>
 </table>
@@ -2431,33 +2431,33 @@ zip(make_mat(fb_broad,  in_shape=(4, 10), out_shape=(4, 10)), split=40, out_shap
     </tr>
     <tr>
       <th>4</th>
-      <td>4</td>
-      <td>4</td>
+      <td>5</td>
+      <td>5</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>5</td>
-      <td>5</td>
+      <td>6</td>
+      <td>6</td>
     </tr>
     <tr>
       <th>6</th>
-      <td>6</td>
-      <td>6</td>
+      <td>7</td>
+      <td>7</td>
     </tr>
     <tr>
       <th>7</th>
-      <td>7</td>
-      <td>7</td>
+      <td>8</td>
+      <td>8</td>
     </tr>
     <tr>
       <th>8</th>
-      <td>8</td>
-      <td>8</td>
+      <td>9</td>
+      <td>9</td>
     </tr>
     <tr>
       <th>9</th>
-      <td>9</td>
-      <td>9</td>
+      <td>0</td>
+      <td>10</td>
     </tr>
   </tbody>
 </table>
@@ -2635,53 +2635,53 @@ zip(make_mat2(fb_mm,  in_shape=(5, 5), in_shape2=(5, 5), out_shape=(5, 5)),
   <tbody>
     <tr>
       <th>0</th>
-      <td>1</td>
+      <td>0</td>
       <td>0</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>2</td>
+      <td>1</td>
       <td>0</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>3</td>
+      <td>2</td>
       <td>0</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>4</td>
+      <td>3</td>
       <td>0</td>
     </tr>
     <tr>
       <th>4</th>
+      <td>4</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>1</td>
+      <td>0</td>
       <td>1</td>
     </tr>
     <tr>
       <th>6</th>
-      <td>2</td>
+      <td>1</td>
       <td>1</td>
     </tr>
     <tr>
       <th>7</th>
-      <td>3</td>
+      <td>2</td>
       <td>1</td>
     </tr>
     <tr>
       <th>8</th>
-      <td>4</td>
+      <td>3</td>
       <td>1</td>
     </tr>
     <tr>
       <th>9</th>
-      <td>0</td>
-      <td>2</td>
+      <td>4</td>
+      <td>1</td>
     </tr>
   </tbody>
 </table>
@@ -2732,38 +2732,38 @@ zip(make_mat2(fb_mm,  in_shape=(5, 5), in_shape2=(5, 5), out_shape=(5, 5)),
     </tr>
     <tr>
       <th>3</th>
-      <td>15</td>
-      <td>0</td>
+      <td>1</td>
+      <td>1</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>20</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>1</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>6</th>
       <td>6</td>
       <td>1</td>
     </tr>
     <tr>
-      <th>7</th>
+      <th>5</th>
       <td>11</td>
       <td>1</td>
     </tr>
     <tr>
+      <th>6</th>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>7</td>
+      <td>2</td>
+    </tr>
+    <tr>
       <th>8</th>
-      <td>16</td>
-      <td>1</td>
+      <td>12</td>
+      <td>2</td>
     </tr>
     <tr>
       <th>9</th>
-      <td>21</td>
-      <td>1</td>
+      <td>3</td>
+      <td>3</td>
     </tr>
   </tbody>
 </table>
