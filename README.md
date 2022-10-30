@@ -24,7 +24,7 @@ Your goal in these puzzles is to implement the derivatives for each function bel
 * Every answer is 1 line of 80-column code. 
 * Everything in these puzzles should be done with standard Python numbers. (No need for torch or anything else.)
 * Recall the basic multivariate calculus identities, most importantly: 
-$$ f(x_1, x_2, x_3) = x_1 + x_2 + x_3 \Rightarrow \frac{d f(x)_1}{dx_1} = 1, \frac{d f(x)_1}{dx_2} = 0  $$
+$$f(x_1, x_2, x_3) = x_1 + x_2 + x_3 \Rightarrow \frac{d f(x)_1}{dx_1} = 1, \frac{d f(x)_1}{dx_2} = 0$$
 
 * Python booleans auto-cast with python numbers. So you can use them as indicator functions, i.e. $$\mathbf{1}(3=3) \cdot (25-3)$$
 
@@ -40,11 +40,6 @@ $$ f(x_1, x_2, x_3) = x_1 + x_2 + x_3 \Rightarrow \frac{d f(x)_1}{dx_1} = 1, \fr
     22
 
 
-
-
-```python
-
-```
 
 
 ```python
@@ -433,7 +428,7 @@ in_out(fb_id, overlap=False, y=gy[1:2], out_shape=1)
 
 
     
-![svg](autodiff_puzzlers_files/autodiff_puzzlers_6_2.svg)
+![svg](autodiff_puzzlers_files/autodiff_puzzlers_5_2.svg)
     
 
 
@@ -492,7 +487,7 @@ in_out(fb_cos, overlap=False, y=gy[1:2], out_shape=1)
 
 
     
-![svg](autodiff_puzzlers_files/autodiff_puzzlers_8_2.svg)
+![svg](autodiff_puzzlers_files/autodiff_puzzlers_7_2.svg)
     
 
 
@@ -597,7 +592,7 @@ in_out(fb_mean, overlap=False,  out_shape=1)
 
 
     
-![svg](autodiff_puzzlers_files/autodiff_puzzlers_10_2.svg)
+![svg](autodiff_puzzlers_files/autodiff_puzzlers_9_2.svg)
     
 
 
@@ -620,7 +615,7 @@ in_out(fb_prod, overlap=False,  out_shape=1)
 
 
     
-![svg](autodiff_puzzlers_files/autodiff_puzzlers_12_0.svg)
+![svg](autodiff_puzzlers_files/autodiff_puzzlers_11_0.svg)
     
 
 
@@ -724,7 +719,7 @@ in_out(fb_repeat, overlap=False, y=gy[1:2], out_shape=50)
 
 
     
-![svg](autodiff_puzzlers_files/autodiff_puzzlers_14_2.svg)
+![svg](autodiff_puzzlers_files/autodiff_puzzlers_13_2.svg)
     
 
 
@@ -829,7 +824,7 @@ in_out(fb_repeat_scale, overlap=False, y=gy[1:2], out_shape=50)
 
 
     
-![svg](autodiff_puzzlers_files/autodiff_puzzlers_16_2.svg)
+![svg](autodiff_puzzlers_files/autodiff_puzzlers_15_2.svg)
     
 
 
@@ -939,7 +934,7 @@ in_out(fb_neg)
 
 
     
-![svg](autodiff_puzzlers_files/autodiff_puzzlers_18_2.svg)
+![svg](autodiff_puzzlers_files/autodiff_puzzlers_17_2.svg)
     
 
 
@@ -997,8 +992,8 @@ in_out(fb_relu)
   <tbody>
     <tr>
       <th>0</th>
-      <td>2</td>
-      <td>2</td>
+      <td>1</td>
+      <td>1</td>
     </tr>
     <tr>
       <th>1</th>
@@ -1012,38 +1007,38 @@ in_out(fb_relu)
     </tr>
     <tr>
       <th>3</th>
-      <td>6</td>
-      <td>6</td>
+      <td>5</td>
+      <td>5</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>8</td>
-      <td>8</td>
+      <td>6</td>
+      <td>6</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>9</td>
-      <td>9</td>
+      <td>8</td>
+      <td>8</td>
     </tr>
     <tr>
       <th>6</th>
-      <td>10</td>
-      <td>10</td>
+      <td>9</td>
+      <td>9</td>
     </tr>
     <tr>
       <th>7</th>
-      <td>11</td>
-      <td>11</td>
+      <td>10</td>
+      <td>10</td>
     </tr>
     <tr>
       <th>8</th>
-      <td>12</td>
-      <td>12</td>
+      <td>11</td>
+      <td>11</td>
     </tr>
     <tr>
       <th>9</th>
-      <td>13</td>
-      <td>13</td>
+      <td>12</td>
+      <td>12</td>
     </tr>
   </tbody>
 </table>
@@ -1054,7 +1049,7 @@ in_out(fb_relu)
 
 
     
-![svg](autodiff_puzzlers_files/autodiff_puzzlers_20_2.svg)
+![svg](autodiff_puzzlers_files/autodiff_puzzlers_19_2.svg)
     
 
 
@@ -1160,7 +1155,7 @@ in_out(fb_index, overlap=False, out_shape=25)
 
 
     
-![svg](autodiff_puzzlers_files/autodiff_puzzlers_22_2.svg)
+![svg](autodiff_puzzlers_files/autodiff_puzzlers_21_2.svg)
     
 
 
@@ -1269,7 +1264,7 @@ in_out(fb_cumsum, [20, 35, 40], overlap=True, diff=20)
 
 
     
-![svg](autodiff_puzzlers_files/autodiff_puzzlers_24_2.svg)
+![svg](autodiff_puzzlers_files/autodiff_puzzlers_23_2.svg)
     
 
 
@@ -1376,7 +1371,7 @@ in_out(fb_running, [0, 20, 35], diff=4)
 
 
     
-![svg](autodiff_puzzlers_files/autodiff_puzzlers_26_2.svg)
+![svg](autodiff_puzzlers_files/autodiff_puzzlers_25_2.svg)
     
 
 
@@ -1427,52 +1422,52 @@ in_out(fb_sort, overlap=False)
   <tbody>
     <tr>
       <th>0</th>
-      <td>7</td>
+      <td>2</td>
       <td>0</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>0</td>
+      <td>7</td>
       <td>1</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>5</td>
+      <td>0</td>
       <td>2</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>1</td>
+      <td>14</td>
       <td>3</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>48</td>
+      <td>43</td>
       <td>4</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>8</td>
+      <td>25</td>
       <td>5</td>
     </tr>
     <tr>
       <th>6</th>
-      <td>33</td>
+      <td>5</td>
       <td>6</td>
     </tr>
     <tr>
       <th>7</th>
-      <td>28</td>
+      <td>18</td>
       <td>7</td>
     </tr>
     <tr>
       <th>8</th>
-      <td>25</td>
+      <td>49</td>
       <td>8</td>
     </tr>
     <tr>
       <th>9</th>
-      <td>6</td>
+      <td>20</td>
       <td>9</td>
     </tr>
   </tbody>
@@ -1484,7 +1479,7 @@ in_out(fb_sort, overlap=False)
 
 
     
-![svg](autodiff_puzzlers_files/autodiff_puzzlers_28_2.svg)
+![svg](autodiff_puzzlers_files/autodiff_puzzlers_27_2.svg)
     
 
 
@@ -1674,7 +1669,7 @@ zip(fb_emean)
 
 
     
-![svg](autodiff_puzzlers_files/autodiff_puzzlers_30_4.svg)
+![svg](autodiff_puzzlers_files/autodiff_puzzlers_29_4.svg)
     
 
 
@@ -1724,53 +1719,53 @@ zip(fb_mul)
   <tbody>
     <tr>
       <th>0</th>
-      <td>0</td>
-      <td>0</td>
+      <td>1</td>
+      <td>1</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>1</td>
-      <td>1</td>
+      <td>2</td>
+      <td>2</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>2</td>
-      <td>2</td>
+      <td>3</td>
+      <td>3</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>3</td>
-      <td>3</td>
+      <td>4</td>
+      <td>4</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>4</td>
-      <td>4</td>
+      <td>5</td>
+      <td>5</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>5</td>
-      <td>5</td>
+      <td>6</td>
+      <td>6</td>
     </tr>
     <tr>
       <th>6</th>
-      <td>6</td>
-      <td>6</td>
+      <td>7</td>
+      <td>7</td>
     </tr>
     <tr>
       <th>7</th>
-      <td>7</td>
-      <td>7</td>
+      <td>8</td>
+      <td>8</td>
     </tr>
     <tr>
       <th>8</th>
-      <td>8</td>
-      <td>8</td>
+      <td>9</td>
+      <td>9</td>
     </tr>
     <tr>
       <th>9</th>
-      <td>9</td>
-      <td>9</td>
+      <td>10</td>
+      <td>10</td>
     </tr>
   </tbody>
 </table>
@@ -1863,7 +1858,7 @@ zip(fb_mul)
 
 
     
-![svg](autodiff_puzzlers_files/autodiff_puzzlers_32_4.svg)
+![svg](autodiff_puzzlers_files/autodiff_puzzlers_31_4.svg)
     
 
 
@@ -1935,38 +1930,38 @@ zip(fb_conv, split=45, out_shape=39, pos1=[10, 20, 30], pos2=[5] if SHOW_KERNEL 
     </tr>
     <tr>
       <th>3</th>
-      <td>4</td>
+      <td>3</td>
       <td>0</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>1</td>
-      <td>1</td>
+      <td>4</td>
+      <td>0</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>2</td>
+      <td>1</td>
       <td>1</td>
     </tr>
     <tr>
       <th>6</th>
-      <td>3</td>
+      <td>2</td>
       <td>1</td>
     </tr>
     <tr>
       <th>7</th>
-      <td>5</td>
+      <td>3</td>
       <td>1</td>
     </tr>
     <tr>
       <th>8</th>
-      <td>2</td>
-      <td>2</td>
+      <td>4</td>
+      <td>1</td>
     </tr>
     <tr>
       <th>9</th>
-      <td>3</td>
-      <td>2</td>
+      <td>5</td>
+      <td>1</td>
     </tr>
   </tbody>
 </table>
@@ -2047,8 +2042,8 @@ zip(fb_conv, split=45, out_shape=39, pos1=[10, 20, 30], pos2=[5] if SHOW_KERNEL 
     </tr>
     <tr>
       <th>9</th>
-      <td>4</td>
-      <td>1</td>
+      <td>0</td>
+      <td>2</td>
     </tr>
   </tbody>
 </table>
@@ -2059,7 +2054,7 @@ zip(fb_conv, split=45, out_shape=39, pos1=[10, 20, 30], pos2=[5] if SHOW_KERNEL 
 
 
     
-![svg](autodiff_puzzlers_files/autodiff_puzzlers_34_4.svg)
+![svg](autodiff_puzzlers_files/autodiff_puzzlers_33_4.svg)
     
 
 
@@ -2174,7 +2169,7 @@ zip(make_mat(fb_view, (4, 10), (4, 10)), split=40, out_shape=40, gaps=[10 * i fo
 
 
     
-![svg](autodiff_puzzlers_files/autodiff_puzzlers_37_2.svg)
+![svg](autodiff_puzzlers_files/autodiff_puzzlers_36_2.svg)
     
 
 
@@ -2283,7 +2278,7 @@ zip(make_mat(fb_trans,  in_shape=(4, 10), out_shape=(10, 4)), split=40, out_shap
 
 
     
-![svg](autodiff_puzzlers_files/autodiff_puzzlers_39_2.svg)
+![svg](autodiff_puzzlers_files/autodiff_puzzlers_38_2.svg)
     
 
 
@@ -2473,7 +2468,7 @@ zip(make_mat(fb_broad,  in_shape=(4, 10), out_shape=(4, 10)), split=40, out_shap
 
 
     
-![svg](autodiff_puzzlers_files/autodiff_puzzlers_41_4.svg)
+![svg](autodiff_puzzlers_files/autodiff_puzzlers_40_4.svg)
     
 
 
@@ -2584,7 +2579,7 @@ zip(make_mat(fb_mean,  in_shape=(4, 10), out_shape=(1, 10)),
 
 
     
-![svg](autodiff_puzzlers_files/autodiff_puzzlers_43_2.svg)
+![svg](autodiff_puzzlers_files/autodiff_puzzlers_42_2.svg)
     
 
 
@@ -2640,53 +2635,53 @@ zip(make_mat2(fb_mm,  in_shape=(5, 5), in_shape2=(5, 5), out_shape=(5, 5)),
   <tbody>
     <tr>
       <th>0</th>
-      <td>0</td>
+      <td>1</td>
       <td>0</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>1</td>
+      <td>2</td>
       <td>0</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>2</td>
+      <td>3</td>
       <td>0</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>3</td>
+      <td>4</td>
       <td>0</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>4</td>
       <td>0</td>
+      <td>1</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>0</td>
+      <td>1</td>
       <td>1</td>
     </tr>
     <tr>
       <th>6</th>
-      <td>1</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>7</th>
       <td>2</td>
       <td>1</td>
     </tr>
     <tr>
-      <th>8</th>
+      <th>7</th>
       <td>3</td>
       <td>1</td>
     </tr>
     <tr>
-      <th>9</th>
+      <th>8</th>
       <td>4</td>
       <td>1</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>0</td>
+      <td>2</td>
     </tr>
   </tbody>
 </table>
@@ -2779,7 +2774,7 @@ zip(make_mat2(fb_mm,  in_shape=(5, 5), in_shape2=(5, 5), out_shape=(5, 5)),
 
 
     
-![svg](autodiff_puzzlers_files/autodiff_puzzlers_45_4.svg)
+![svg](autodiff_puzzlers_files/autodiff_puzzlers_44_4.svg)
     
 
 
@@ -2977,7 +2972,7 @@ zip(make_mat2(fb_conv,  in_shape=(7, 7), in_shape2=(3, 3), out_shape=(5, 5)),
 
 
     
-![svg](autodiff_puzzlers_files/autodiff_puzzlers_47_4.svg)
+![svg](autodiff_puzzlers_files/autodiff_puzzlers_46_4.svg)
     
 
 
