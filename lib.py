@@ -208,10 +208,12 @@ def numerical_deriv(fb, x, out):
         s = x.shape[0]
     dx2 = torch.zeros(out.shape[0], s)
     for i in range(s):
-        up = x + 1e-5 * torch.eye(s)[i]            
-        f = fb(up)
+        up = x + 1e-5 * torch.eye(s).double()[i]            
+        f1 = fb(up)
+        up = x - 1e-5 * torch.eye(s).double()[i]            
+        f2 = fb(up)        
         for j in range(out.shape[0]):
-            dx2[j, i] = (f(j) - out[j]) / 1e-5
+            dx2[j, i] = (f1(j) - f2(j)) / (2 * 1e-5)
     return dx2
 
 def two_argf(fb, x, y, out_shape):
@@ -251,7 +253,7 @@ def check(dx, dx2):
     return bad, pd.DataFrame(df)
 
 gy = torch.tensor([math.sin(x/20) * 0.5 + (random.random() - 0.5)
-                  for x in range(50)])
+                  for x in range(50)]).double()
 
 def fb_demo(x):
     f = lambda o: x[o]
