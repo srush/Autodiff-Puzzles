@@ -55,11 +55,11 @@ def show_dog():
     "DKLBJh7",
     "eyxH0Wc",
     "rJEkEw4"]
-    return HTML("""
+    display(HTML("""
     <video alt="test" controls autoplay=1>
         <source src="https://openpuppies.com/mp4/%s.mp4"  type="video/mp4">
     </video>
-    """%(random.sample(pups, 1)[0]))
+    """%(random.sample(pups, 1)[0])))
 
 
 
