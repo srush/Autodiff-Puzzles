@@ -11,6 +11,58 @@ set_svg_height(400)
 set_svg_draw_height(400)
 from IPython.display import display, HTML
 
+def show_dog():
+    print("Passed Tests!")
+    pups = [
+    "2m78jPG",
+    "pn1e9TO",
+    "MQCIwzT",
+    "udLK6FS",
+    "ZNem5o3",
+    "DS2IZ6K",
+    "aydRUz8",
+    "MVUdQYK",
+    "kLvno0p",
+    "wScLiVz",
+    "Z0TII8i",
+    "F1SChho",
+    "9hRi2jN",
+    "lvzRF3W",
+    "fqHxOGI",
+    "1xeUYme",
+    "6tVqKyM",
+    "CCxZ6Wr",
+    "lMW0OPQ",
+    "wHVpHVG",
+    "Wj2PGRl",
+    "HlaTE8H",
+    "k5jALH0",
+    "3V37Hqr",
+    "Eq2uMTA",
+    "Vy9JShx",
+    "g9I2ZmK",
+    "Nu4RH7f",
+    "sWp0Dqd",
+    "bRKfspn",
+    "qawCMl5",
+    "2F6j2B4",
+    "fiJxCVA",
+    "pCAIlxD",
+    "zJx2skh",
+    "2Gdl1u7",
+    "aJJAY4c",
+    "ros6RLC",
+    "DKLBJh7",
+    "eyxH0Wc",
+    "rJEkEw4"]
+    return HTML("""
+    <video alt="test" controls autoplay=1>
+        <source src="https://openpuppies.com/mp4/%s.mp4"  type="video/mp4">
+    </video>
+    """%(random.sample(pups, 1)[0]))
+
+
+
 def line(y, rev=False):
     return [(i + j, -2 * float(y[i])) 
             for i in range(y.shape[0])
@@ -46,7 +98,7 @@ def frame(name, d, c, l = "", w=15, h=1.5):
     env = s.get_envelope()
     r = rectangle(env.width + w, env.height * h).fill_color(c)
     if l:
-        r = r.align_l() + (hstrut(w/4) | text(l, 3).fill_color(ORANGE)).align_l()
+        r = r.align_l() + (hstrut(w/4) | text(l, 2.5).fill_color(ORANGE)).align_l()
     return r.center_xy().translate_by(env.center) + d
 
 def get_transform(name, d, v):
@@ -201,6 +253,34 @@ def check(dx, dx2):
 gy = torch.tensor([math.sin(x/20) * 0.5 + (random.random() - 0.5)
                   for x in range(50)])
 
+def fb_demo(x):
+    f = lambda o: x[o]
+    dx = lambda i, o: (abs(o-i) < 4) * (abs(o-i) % 2) # Fill in this line
+    return f, dx
+
+def in_out2(fb, fb2, pos=None, overlap=False, diff=1, out_shape=50, y=gy):
+    "For functions with point samples"
+    set_svg_height(500)
+    f_y, dx, _ = one_argf(fb, y, out_shape)
+    g_f_y, dxg, _ = one_argf(fb2, f_y, out_shape)
+
+    if pos is None:
+        pos = range(y.shape[0])
+    d = vcat([graph(y, "x").center_xy(),
+              graph(f_y, "f(x)").center_xy(),
+              graph(g_f_y, "g(f(x))").center_xy(),
+    ], 0.1)
+
+    d += overgraph(d, "f(x)", f_y, f_y + diff * dx[:, pos].sum(-1), Color("red"))
+    d += overgraph(d, "g(f(x))", g_f_y, g_f_y + diff * (dxg @ dx)[:, pos].sum(-1), Color("green"))
+    
+    d = connect(d, y, "x", f_y, "f(x)", dx, pos, to_line=True)
+    d = connect(d, f_y, "f(x)", g_f_y, "g(f(x))", dxg @ dx,
+                [i.item() for i in  dx[:, pos].sum(-1).nonzero()], to_line=True, color=Color("lightgreen"))
+    
+    return outer_frame(d)
+
+
 def in_out(fb, pos=None, overlap=False, diff=1, out_shape=50, y=gy):
     "For functions with point samples"
     out, dx, dx2 = one_argf(fb, y, out_shape)
@@ -225,6 +305,8 @@ def in_out(fb, pos=None, overlap=False, diff=1, out_shape=50, y=gy):
     if bad:
         print("Errors")
         display(df[:10])
+    else:
+        show_dog()
     return outer_frame(d)
 
 def zip(fb, split=25, pos1 = None, pos2=None, out_shape=25, diff=1, overlap=False, gaps=[0], y=gy):
@@ -268,7 +350,9 @@ def zip(fb, split=25, pos1 = None, pos2=None, out_shape=25, diff=1, overlap=Fals
         display(df_x[:10])
     if bad_y:
         print("y Errors")
-        display(df_y[:10]) 
+        display(df_y[:10])
+    if not bad_x and not bad_y:
+        show_dog()
     return outer_frame(d)
 # def fb_index(x):
 #     f = lambda o: x[o+5]
