@@ -243,7 +243,7 @@ def one_argf(fb, x, out_shape):
 def check(dx, dx2):
     bad = {}
     df = []
-    for j, i in (~torch.isclose(dx, dx2, atol=1e-2)).nonzero():
+    for j, i in (~torch.isclose(dx, dx2, atol=1e-4)).nonzero():
         #print(i.item(), j.item(), dx[i,j].item(), dx2[i,j].item())
         bad.setdefault(i.item(), [])
         bad[i.item()].append(j.item())
