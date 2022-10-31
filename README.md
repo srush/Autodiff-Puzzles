@@ -4,8 +4,7 @@
 
 This notebook contains a series of self-contained puzzles for learning about derivatives in tensor libraries. It is the 3rd puzzle set in a series of puzzles about deep learning programming ([Tensor Puzzles](https://github.com/srush/Tensor-Puzzles), [GPU Puzzles](https://github.com/srush/GPU-Puzzles) ) . While related in spirit, the puzzles are all pretty seperate and can be done on their own. 
 
-
-![](https://github.com/srush/autodiff-puzzles/raw/main/image.png)
+![image](https://user-images.githubusercontent.com/35882/199065527-768cbd74-eecf-45cf-8420-73a881354c59.png)
 
 **Click here to get started:**
 
