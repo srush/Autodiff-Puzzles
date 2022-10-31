@@ -322,7 +322,6 @@ def zip(fb, split=25, pos1 = None, pos2=None, out_shape=25, diff=1, overlap=Fals
         pos2 = range(y2.shape[0])    
     d = two_arg(x, y2, out, gaps)
     gaps = gaps + [x.shape[0]]
-    print(len(gaps))
     if len(gaps) == 2:
         colors = [ORANGE]
     else:         
