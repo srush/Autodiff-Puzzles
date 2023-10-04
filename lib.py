@@ -75,7 +75,7 @@ def graph(y, name, splits=[]):
     for s in splits:
         top += make_path([(s, -2), (s, 2)])
     top = top.named(Name(name))
-    top = frame(name, top, Color("lightgrey"), name, h=1.5) + top
+    top = frame(name, top, Color("#EEEEEE"), name, h=1.5) + top
     top = top.scale_uniform_to_x((y.shape[0] + 15)/ 100).align_tl()
     return top
 
@@ -96,9 +96,9 @@ def overgraph(d, name, y, y2, color):
 def frame(name, d, c, l = "", w=15, h=1.5):
     s = d.get_subdiagram(Name(name))
     env = s.get_envelope()
-    r = rectangle(env.width + w, env.height * h).fill_color(c)
+    r = rectangle(env.width + w, env.height * h).fill_color(c).line_width(0)
     if l:
-        r = r.align_l() + (hstrut(w/4) | text(l, 2.5).fill_color(ORANGE)).align_l()
+        r = r.align_l() + (hstrut(w/4) | text(l, 2.5).fill_color(Color("black")).line_width(0)).align_l()
     return r.center_xy().translate_by(env.center) + d
 
 def get_transform(name, d, v):
